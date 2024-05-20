@@ -9,6 +9,7 @@ type Props = {
   handleChangeText: (text: string) => void;
   otherStyles?: string;
   keyboardType?: string;
+  placeholder?: string;
 };
 
 const FormField = ({
@@ -16,6 +17,7 @@ const FormField = ({
   value,
   handleChangeText,
   otherStyles,
+  placeholder,
 }: Props) => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 

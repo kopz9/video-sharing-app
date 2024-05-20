@@ -6,15 +6,14 @@ import { icons } from "../constants";
 type Props = {
   title: string;
   value: string;
-  placeholder: string;
   handleChangeText: (text: string) => void;
   otherStyles?: string;
+  keyboardType?: string;
 };
 
 const FormField = ({
   title,
   value,
-  placeholder,
   handleChangeText,
   otherStyles,
 }: Props) => {
